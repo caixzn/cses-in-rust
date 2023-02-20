@@ -6,7 +6,7 @@ fn main() {
     io::stdin().read_line(&mut input).unwrap();
 
     // read the array
-    let mut input: String = String::new();
+    input.clear();
     io::stdin().read_line(&mut input).unwrap();
     let mut v: Vec<u64> = input
         .split_whitespace()

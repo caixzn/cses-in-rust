@@ -11,7 +11,7 @@ fn main() {
     let mut v: Vec<bool> = vec![false; n];
 
     // read the elements and set the corresponding element in the vector to true
-    let mut input: String = String::new();
+    input.clear();
     io::stdin().read_line(&mut input).unwrap();
     for i in input.split_whitespace() {
         v[i.parse::<usize>().unwrap() - 1] = true;
